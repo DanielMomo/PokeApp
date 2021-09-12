@@ -1,11 +1,14 @@
 import React from 'react';
-import './App.css';
-import Login from './assets/components/Login';
+import { Router } from 'react-router-dom';
+import Routes from './routes';
+import history from './history';
 
-function App() {
-  return (
-    <Login />
-  );
+const App = () => {
+    return(
+        <Router history={history}>
+            <Routes />
+        </Router>
+    );
 }
 
 export default App;
